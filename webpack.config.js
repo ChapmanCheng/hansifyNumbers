@@ -7,10 +7,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: 'cinmaan',
+    library: 'hansifyNumbers',
     libraryTarget: 'umd',
     globalObject: 'this',
-    // TODO： check out this key https://webpack.js.org/configuration/output/#outputlibrarytarget
     libraryExport: 'default' 
   },
   resolve: {
