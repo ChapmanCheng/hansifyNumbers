@@ -4,6 +4,14 @@ import BG_UNIT from "./units/BG_UNIT";
 import getUnit from "./getUnit";
 import SM_UNIT from "./units/SM_UNIT";
 
+/**
+ * hansify your numbers from 500, 000 to 50萬
+ * @param {number} input - numbers you want to format
+ * @param {Object} option - options for formatting 
+ * @param {boolean} option.trimZero currently not in use;
+ * @param {boolean} option[onlyFirstNum]  only shows 1st number e.g. 5十萬;
+ * @param {string} option[withDecimal = 1 | 2 ] allow decimals up to 2 digits;
+ */
 export default function (
   input: number,
   option: optionInterface = defOption
