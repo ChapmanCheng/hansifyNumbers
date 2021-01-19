@@ -5,9 +5,11 @@ test("5000 should return 5000", () => {
 });
 
 test("5000 should return 5千", () => {
-  expect(hansifyNumbers(5000, {
-    onlyFirstNum: true
-  })).toBe("5千");
+  expect(
+    hansifyNumbers(5000, {
+      onlyFirstNum: true,
+    })
+  ).toBe("5千");
 });
 
 test("5000 should return 5000 when onlyFirstNum is false", () => {

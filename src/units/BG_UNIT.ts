@@ -1,4 +1,4 @@
-const BG_UNIT: Array<string> = [,
+const BG_UNIT: Array<string> = [
   "萬",
   "億",
   "兆",
