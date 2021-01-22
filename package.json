@@ -1,8 +1,14 @@
 {
   "name": "hansifynumbers",
-  "version": "1.0.0",
-  "description": "convert numbers to zh writings",
+  "version": "0.1.0",
+  "description": "convert numbers to hans writings",
   "main": "./dist/index.umd.js",
+  "keywords": ["hans", "hansify", "hansify numbers"],
+  "homepage": "https://github.com/ChapmanCheng/hansifyNumbers",
+  "bugs": {
+    "url": "https://github.com/ChapmanCheng/hansifyNumbers/issues"
+  },
+  "types": "dist/index.d.ts",
   "author": "ChapmanCheng",
   "license": "MIT",
   "devDependencies": {
@@ -22,5 +28,6 @@
     "webpack:build": "webpack --mode production",
     "test": "jest"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": "github:ChapmanCheng/hansifyNumbers"
 }

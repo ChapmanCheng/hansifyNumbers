@@ -39,14 +39,19 @@ module.exports = function (env, argv) {
           use: {
             loader: "babel-loader",
             options: {
-              presets: ["@babel/preset-env", "@babel/preset-typescript"],
+              presets: [
+                "@babel/preset-env", 
+                "@babel/preset-typescript"
+              ],
             },
           },
         },
       ],
     },
     plugins: [
-      new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: [], }),
+      new CleanWebpackPlugin({ 
+        cleanOnceBeforeBuildPatterns: [], 
+      }),
     ],
     devtool: isProduction ? "" : "source-map",
   }));
