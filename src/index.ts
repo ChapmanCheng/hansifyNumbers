@@ -10,7 +10,8 @@ import SM_UNIT from "./units/SM_UNIT";
  * @param {Object} option - options for formatting
  * @param {boolean} option.trimZero currently not in use;
  * @param {boolean} option[onlyFirstNum]  only shows 1st number e.g. 5十萬;
- * @param {string} option[withDecimal = 1 | 2 ] allow decimals up to 2 digits;
+ * @param {string} option[withDecimal] = 1 | 2 ] allow decimals up to 2 digits;
+ * @returns {string} 
  */
 export default function (
   input: number,
