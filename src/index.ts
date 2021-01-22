@@ -24,7 +24,7 @@ export default function (
   var [firstNum, ...otherNum]: Array<
     string | string[]
   > = division.toString().split("");
-  var unit: string = getBGUnit(index);
+  var unit: string = getBGUnit(index-1);
   var smUnit = getSMUnit(otherNum.length - 1);
 
   if (!index) {
