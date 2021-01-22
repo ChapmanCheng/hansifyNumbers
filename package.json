@@ -1,6 +1,6 @@
 {
   "name": "hansifynumbers",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "convert numbers to hans writings",
   "main": "./dist/index.umd.js",
   "keywords": ["hans", "hansify", "hansify numbers"],
@@ -26,7 +26,8 @@
   "scripts": {
     "webpack:dev": "webpack --watch",
     "webpack:build": "webpack --mode production",
-    "types": "tsc --project tsconfig.json",
+    "typescript:types": "tsc --project tsconfig.json",
+    "build": "npm run webpack:build && npm run typescript:types",
     "test": "jest"
   },
   "dependencies": {},
